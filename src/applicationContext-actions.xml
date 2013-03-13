@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	     xmlns:aop="http://www.springframework.org/schema/aop"
+	     xmlns:tx="http://www.springframework.org/schema/tx"
+	     xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd">
+	
+	<!-- 用户注册action -->
+	<bean name="/registing" class="com.javaww.action.RegisterAction" scope="prototype">
+		<property name="userDao" ref="userDao"/>
+		<property name="user" ref="user"/>
+	</bean>
+	
+	<!-- 用户登录action -->
+	<bean name="/logining" class="com.javaww.action.LoginAction" scope="prototype">
+		<property name="userDao" ref="userDao"/>
+		<property name="user" ref="user"/>
+	</bean>
+	
+	<!-- 首页action -->
+	<bean name="/index" class="com.javaww.action.IndexAction" scope="prototype">
+		<property name="subItemDao" ref="subItemDao"/>
+		<property name="itemDao" ref="itemDao"/>
+		<property name="item" ref="item"/>
+		<property name="questionDao" ref="questionDao"/>
+	</bean>
+	
+	<!-- 提问action -->
+	<bean name="/toask" class="com.javaww.action.ToAskAction" scope="prototype">
+		<property name="user" ref="user"/>
+		<property name="subItemDao" ref="subItemDao"/>
+		<property name="itemDao" ref="itemDao"/>
+		<property name="subItem" ref="subItem"/>
+		<property name="item" ref="item"/>
+	</bean>
+	
+	<!-- 提问action -->
+	<bean name="/asking" class="com.javaww.action.AskingAction" scope="prototype">
+		<property name="user" ref="user"/>
+		<property name="userDao" ref="userDao"/>
+		<property name="subItemDao" ref="subItemDao"/>
+		<property name="itemDao" ref="itemDao"/>
+		<property name="subItem" ref="subItem"/>
+		<property name="item" ref="item"/>
+		<property name="questionDao" ref="questionDao"/>
+		<property name="question" ref="question"/>
+	</bean>
+	
+	<!-- 提问action -->
+	<bean name="/myquestionlist" class="com.javaww.action.MyQuestionAction" scope="prototype">
+		<property name="user" ref="user"/>
+		<property name="questionDao" ref="questionDao"/>
+	</bean>
+	
+	<!-- 问题详细信息action -->
+	<bean name="/queryques" class="com.javaww.action.QuestionDetailAction" scope="prototype">
+		<property name="questionDao" ref="questionDao"/>
+		<property name="question" ref="question"/>
+	</bean>
+	
+	<!-- 用户注销action -->
+	<bean name="/logout" class="com.javaww.action.LogoutAction" scope="prototype"/>
+	
+	<!-- 用户积分排行action -->
+	<bean name="/scorelist" class="com.javaww.action.ScoreListAction" scope="prototype">
+		<property name="userDao" ref="userDao"/>
+	</bean>
+	
+	<!-- 用户个人信息修改action -->
+	<bean name="/modifinguser" class="com.javaww.action.ModifyUserAction" scope="prototype">
+		<property name="userDao" ref="userDao"/>
+		<property name="user" ref="user"/>
+	</bean>
+	
+	<!-- 查询所有问题列表action -->
+	<bean name="/allquestionlist" class="com.javaww.action.AllQuestionAction" scope="prototype">
+		<property name="user" ref="user"/>
+		<property name="questionDao" ref="questionDao"/>
+	</bean>
+	
+	<!-- go 回答问题问题action -->
+	<bean name="/toanswer" class="com.javaww.action.ToAnswerAction" scope="prototype">
+		<property name="questionDao" ref="questionDao"/>
+		<property name="question" ref="question"/>
+	</bean>
+	
+	<!-- 回答问题问题action -->
+	<bean name="/answering" class="com.javaww.action.AnsweringAction" scope="prototype">
+		<property name="questionDao" ref="questionDao"/>
+		<property name="question" ref="question"/>
+		<property name="userDao" ref="userDao"/>
+		<property name="user" ref="user"/>
+		<property name="answerDao" ref="answerDao"/>
+		<property name="answer" ref="answer"/>
+	</bean>
+	
+	<!--  查看已有回答问题action -->
+	<bean name="/queryanswer" class="com.javaww.action.AnswerListAction" scope="prototype">
+		<property name="answerDao" ref="answerDao"/>
+	</bean>
+	
+	<!-- 采用答案action -->
+	<bean name="/accept" class="com.javaww.action.AcceptAction" scope="prototype">
+		<property name="questionDao" ref="questionDao"/>
+		<property name="question" ref="question"/>
+		<property name="userDao" ref="userDao"/>
+		<property name="user" ref="user"/>
+		<property name="answerDao" ref="answerDao"/>
+		<property name="answer" ref="answer"/>
+	</bean>
+	
+	<!--  主页二级栏目查询action -->
+	<bean name="/querythisitem" class="com.javaww.action.SubItemQAction" scope="prototype">
+		<property name="questionDao" ref="questionDao"/>
+	</bean>
+	
+	<!-- 后台管理员登录action -->
+	<bean name="/backlogin" class="com.javaww.action.BackAdminLoginAction" scope="prototype">
+		<property name="adminDao" ref="adminDao"/>
+		<property name="admin" ref="admin"/>
+	</bean>
+	
+	<!-- 后台添加栏目action -->
+	<bean name="/back_additem" class="com.javaww.action.BackAddItemAction" scope="prototype">
+		<property name="itemDao" ref="itemDao"/>
+		<property name="item" ref="item"/>
+	</bean>
+	
+	<!-- go 后台修改栏目action -->
+	<bean name="/gobackedititem" class="com.javaww.action.BackModifyItemAction" scope="prototype">
+		<property name="itemDao" ref="itemDao"/>
+		<property name="item" ref="item"/>
+	</bean>
+	
+	<!-- go 后台修改栏目action -->
+	<bean name="/go_back_editItem" class="com.javaww.action.GoBackModifyItemAction" scope="prototype">
+		<property name="itemDao" ref="itemDao"/>
+	</bean>
+	
+	<!-- 后台修改栏目action -->
+	<bean name="/backmodifyitem" class="com.javaww.action.BackModifyingItemAction" scope="prototype">
+		<property name="itemDao" ref="itemDao"/>
+		<property name="item" ref="item"/>
+	</bean>
+	
+	<!-- 后台删除栏目action -->
+	<bean name="/deleteitem" class="com.javaww.action.BackDeleteItemAction" scope="prototype">
+		<property name="itemDao" ref="itemDao"/>
+		<property name="item" ref="item"/>
+	</bean>
+
+	<!-- 后台查询栏目action -->
+	<bean name="/go_back_addSubItem" class="com.javaww.action.BackGoSubAction" scope="prototype">
+		<property name="itemDao" ref="itemDao"/>
+	</bean>
+	
+	<!-- 后台查询栏目action -->
+	<bean name="/gobackaddsubitem" class="com.javaww.action.BackGoAddSubAction" scope="prototype">
+		<property name="itemDao" ref="itemDao"/>
+		<property name="item" ref="item"/>
+	</bean>
+	
+	<!-- 后台查询栏目action -->
+	<bean name="/backaddsubitem" class="com.javaww.action.BackAddSubAction" scope="prototype">
+		<property name="subItem" ref="subItem"/>
+		<property name="subItemDao" ref="subItemDao"/>
+		<property name="itemDao" ref="itemDao"/>
+		<property name="item" ref="item"/>
+	</bean>
+	
+	<!-- 后台查询栏目action -->
+	<bean name="/gobackeditsubitem" class="com.javaww.action.BackGoModifySubAction" scope="prototype">
+		<property name="subItem" ref="subItem"/>
+		<property name="subItemDao" ref="subItemDao"/>
+	</bean>
+	
+	<!-- 后台查询二级栏目action -->
+	<bean name="/go_modifysubitem" class="com.javaww.action.BackGoEditSubAction" scope="prototype">
+		<property name="subItemDao" ref="subItemDao"/>
+	</bean>
+	
+	<!-- 后台xiugai二级栏目action -->
+	<bean name="/backmodifysubitem" class="com.javaww.action.BackEditSubAction" scope="prototype">
+		<property name="subItemDao" ref="subItemDao"/>
+		<property name="subItem" ref="subItem"/>
+	</bean>
+	
+	<!-- 删除二级栏目action -->
+	<bean name="/deletesubitem" class="com.javaww.action.BackDeleteSubAction" scope="prototype">
+		<property name="subItemDao" ref="subItemDao"/>
+		<property name="subItem" ref="subItem"/>
+	</bean>
+	
+	<!--查询用户action -->
+	<bean name="/gobackuserlist" class="com.javaww.action.BackUserListAction" scope="prototype">
+		<property name="userDao" ref="userDao"/>
+	</bean>
+	
+	<!-- 删除用户action -->
+	<bean name="/deleteuser" class="com.javaww.action.BackDeleteUserAction" scope="prototype">
+		<property name="userDao" ref="userDao"/>
+		<property name="user" ref="user"/>
+	</bean>
+	
+	<!--查询问题列表action -->
+	<bean name="/showquestionlist" class="com.javaww.action.BackQueryQuestionAction" scope="prototype">
+		<property name="questionDao" ref="questionDao"/>
+	</bean>
+	
+	<!--查询问题详情action -->
+	<bean name="/detailquestion" class="com.javaww.action.BackQuestionDetailAction" scope="prototype">
+		<property name="questionDao" ref="questionDao"/>
+		<property name="question" ref="question"/>
+	</bean>
+	
+	<!--查询问题详情action -->
+	<bean name="/deletequestion" class="com.javaww.action.BackDeleteQuestionAction" scope="prototype">
+		<property name="questionDao" ref="questionDao"/>
+		<property name="question" ref="question"/>
+	</bean>
+	
+	<!--查询答案列表action -->
+	<bean name="/showanswerlist" class="com.javaww.action.BackAnswerListAction" scope="prototype">
+		<property name="answerDao" ref="answerDao"/>
+	</bean>
+	
+	<!--查询答案列表action -->
+	<bean name="/deleteanswer" class="com.javaww.action.BackDeteleAnswerAction" scope="prototype">
+		<property name="answerDao" ref="answerDao"/>
+		<property name="answer" ref="answer"/>
+	</bean>
+	
+	<!--查询答案列表action -->
+	<bean name="/back_addingadmin" class="com.javaww.action.BackAddAdminAction" scope="prototype">
+		<property name="adminDao" ref="adminDao"/>
+		<property name="admin" ref="admin"/>
+	</bean>
+	
+	<!--查询管理员列表action -->
+	<bean name="/backshowadminlist" class="com.javaww.action.BackAdminListAction" scope="prototype">
+		<property name="adminDao" ref="adminDao"/>
+	</bean>
+	
+	<!--删除管理员action -->
+	<bean name="/deleteadmin" class="com.javaww.action.BackDeleteAdminAction" scope="prototype">
+		<property name="adminDao" ref="adminDao"/>
+		<property name="admin" ref="admin"/>
+	</bean>
+	
+</beans>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.javaww.model">
+	<class name="User">
+		<id name="userid">
+			<generator class="native"/>
+		</id>
+		<property name="username"/>
+		<property name="userpwd"/>
+		<property name="userques"/>
+		<property name="userans"/>
+		<property name="usermail"/>
+		<property name="integral"/>
+		<property name="grade"/>
+		<property name="sex"/>
+		<property name="realname"/>
+		
+	</class>
+</hibernate-mapping>

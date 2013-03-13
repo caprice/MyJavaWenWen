@@ -1,0 +1,44 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+<session-factory>
+	<property name="hibernate.connection.url">
+		jdbc:mysql://localhost/javaww
+	</property>
+	<property name="hibernate.connection.driver_class">
+		com.mysql.jdbc.Driver
+	</property>
+	<property name="hibernate.connection.username">root</property>
+	<property name="hibernate.connection.password">root</property>
+	<property name="hibernate.dialect">
+		org.hibernate.dialect.MySQLDialect
+	</property>
+	<property name="hibernate.show_sql">false</property>
+	<property name="hibernate.current_session_context_class">
+		thread
+	</property>
+	<!-- 
+		<property name="hibernate.current_session_context_class">jta</property>
+	-->
+	<property name="myeclipse.connection.profile">MySQL</property>
+	<property name="connection.url">
+		jdbc:mysql://localhost:3306/javaww
+	</property>
+	<property name="connection.username">root</property>
+	<property name="connection.password">root</property>
+	<property name="connection.driver_class">
+		com.mysql.jdbc.Driver
+	</property>
+	<property name="dialect">
+		org.hibernate.dialect.MySQLDialect
+	</property>
+	<mapping resource="com/javaww/model/Admin.hbm.xml" />
+	<mapping resource="com/javaww/model/Answer.hbm.xml" />
+	<mapping resource="com/javaww/model/Item.hbm.xml" />
+	<mapping resource="com/javaww/model/Question.hbm.xml" />
+	<mapping resource="com/javaww/model/SubItem.hbm.xml" />
+	<mapping resource="com/javaww/model/User.hbm.xml" />
+</session-factory>
+</hibernate-configuration>

@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/register.do" location="950,250" dimension="100,60" />
+  <StrutsActivity path="/registing.do" location="350,150" dimension="358,84" />
+  <StrutsActivity path="/login.do" location="350,350" dimension="82,60" />
+  <StrutsActivity path="/logining.do" location="650,450" dimension="358,84" />
+  <StrutsActivity path="/index.do" location="50,550" dimension="358,84" />
+  <StrutsActivity path="/ask.do" location="650,650" dimension="70,60" />
+  <StrutsActivity path="/toask.do" location="950,750" dimension="358,84" />
+  <StrutsActivity path="/asking.do" location="50,850" dimension="358,84" />
+  <StrutsActivity path="/myquestionlist.do" location="650,950" dimension="358,84" />
+  <StrutsActivity path="/queryques.do" location="50,1050" dimension="358,84" />
+  <StrutsActivity path="/logout.do" location="650,1150" dimension="358,84" />
+  <StrutsActivity path="/scorelist.do" location="50,1350" dimension="358,84" />
+  <StrutsActivity path="/modifyuser.do" location="1250,550" dimension="112,60" />
+  <StrutsActivity path="/modifinguser.do" location="1250,1050" dimension="358,84" />
+  <StrutsActivity path="/allquestionlist.do" location="1250,1250" dimension="358,84" />
+  <StrutsActivity path="/toanswer.do" location="650,1350" dimension="358,84" />
+  <StrutsActivity path="/answering.do" location="50,1550" dimension="358,84" />
+  <StrutsActivity path="/queryanswer.do" location="650,1550" dimension="358,84" />
+  <StrutsActivity path="/accept.do" location="1250,1650" dimension="358,84" />
+  <StrutsActivity path="/querythisitem.do" location="1550,550" dimension="358,84" />
+  <StrutsActivity path="/backlogin.do" location="1550,850" dimension="358,84" />
+  <StrutsActivity path="/back_additem.do" location="50,1750" dimension="358,84" />
+  <StrutsActivity path="/go_back_editItem.do" location="1550,1850" dimension="358,84" />
+  <StrutsActivity path="/gobackedititem.do" location="650,1750" dimension="136,60" />
+  <StrutsActivity path="/backmodifyitem.do" location="950,1850" dimension="358,84" />
+  <StrutsActivity path="/deleteitem.do" location="350,1950" dimension="358,84" />
+  <StrutsActivity path="/go_back_addSubItem.do" location="50,2050" dimension="160,60" />
+  <StrutsActivity path="/gobackaddsubitem.do" location="1850,1050" dimension="358,84" />
+  <StrutsActivity path="/backaddsubitem.do" location="1850,1350" dimension="358,84" />
+  <StrutsActivity path="/gobackeditsubitem.do" location="950,2050" dimension="358,84" />
+  <StrutsActivity path="/go_modifysubitem.do" location="1550,2050" dimension="358,84" />
+  <StrutsActivity path="/backmodifysubitem.do" location="350,2150" dimension="358,84" />
+  <StrutsActivity path="/deletesubitem.do" location="950,2250" dimension="358,84" />
+  <StrutsActivity path="/gobackuserlist.do" location="1550,2250" dimension="358,84" />
+  <StrutsActivity path="/deleteuser.do" location="50,2350" dimension="358,84" />
+  <StrutsActivity path="/register.jsp" location="50,350" dimension="118,48" />
+  <StrutsActivity path="/success.jsp" location="950,150" dimension="112,48" />
+  <StrutsActivity path="/failure.jsp" location="195,45" dimension="112,48" />
+  <StrutsActivity path="/login.jsp" location="650,350" dimension="100,48" />
+  <StrutsActivity path="/index.jsp" location="50,450" dimension="100,48" />
+  <StrutsActivity path="/chooseask.jsp" location="50,750" dimension="124,48" />
+  <StrutsActivity path="/ask.jsp" location="950,650" dimension="88,48" />
+  <StrutsActivity path="/questionlist.jsp" location="350,750" dimension="142,48" />
+  <StrutsActivity path="/questiondetail.jsp" location="650,850" dimension="154,48" />
+  <StrutsActivity path="/scorelist.jsp" location="1250,450" dimension="124,48" />
+  <StrutsActivity path="/modifyuser.jsp" location="1250,950" dimension="130,48" />
+  <StrutsActivity path="/answer.jsp" location="1250,1450" dimension="106,48" />
+  <StrutsActivity path="/answerlist.jsp" location="1250,1550" dimension="130,48" />
+  <StrutsActivity path="/back_index.jsp" location="1550,1450" dimension="130,48" />
+  <StrutsActivity path="/back_editItem.jsp" location="1550,1550" dimension="148,48" />
+  <StrutsActivity path="/back_modifyitem.jsp" location="950,1750" dimension="160,48" />
+  <StrutsActivity path="/back_goeditSubItem.jsp" location="1850,750" dimension="178,48" />
+  <StrutsActivity path="/back_addSubItem.jsp" location="1850,1250" dimension="160,48" />
+  <StrutsActivity path="/back_editSubItem.jsp" location="1850,1650" dimension="166,48" />
+  <StrutsActivity path="/back_modifysubitem.jsp" location="1850,1750" dimension="178,48" />
+  <StrutsActivity path="/back_editUser.jsp" location="50,2250" dimension="148,48" />
+  <StrutsActivity path="/registe.jsp" location="950,50" dimension="112,48" />
+  <StrutsActivity path="/login.d" location="50,1250" dimension="88,48" />
+  <StrutsActivity path="/index.d" location="350,1250" dimension="88,48" />
+  <StrutsActivity path="/subitemlist.jsp" location="1550,750" dimension="136,48" />
+  <StrutsActivity path="/" location="50,1950" dimension="46,48" />
+  <StrutsActivity path="/back_SubItemlist.jsp" location="1850,1550" dimension="166,48" />
+  <StrutsActivity path="/showquestionlist.do" location="650,2450" dimension="358,84" />
+  <StrutsActivity path="/back_editQuestion.jsp" location="2150,750" dimension="172,48" />
+  <StrutsActivity path="/detailquestion.do" location="2150,850" dimension="358,84" />
+  <StrutsActivity path="/back_detailquestion.jsp" location="2150,1250" dimension="184,48" />
+  <StrutsActivity path="/deletequestion.do" location="2150,1550" dimension="358,84" />
+  <StrutsActivity path="/showanswerlist.do" location="2150,1750" dimension="358,84" />
+  <StrutsActivity path="/back_editAnswer.jsp" location="2150,1950" dimension="160,48" />
+  <StrutsActivity path="/deleteanswer.do" location="2150,2050" dimension="358,84" />
+  <StrutsActivity path="/backgoaddadmin.do" location="2150,2250" dimension="358,84" />
+  <StrutsActivity path="/back_addadmin.jsp" location="650,2350" dimension="148,48" />
+  <StrutsActivity path="/back_addingadmin.do" location="1250,2450" dimension="358,84" />
+  <StrutsActivity path="/back_editAdmin.jsp" location="1850,2450" dimension="154,48" />
+  <StrutsActivity path="/backshowadminlist.do" location="2150,2450" dimension="358,84" />
+  <StrutsActivity path="/deleteadmin.do" location="50,2550" dimension="358,84" />
+  <StrutsTransition id="/detailquestion.do,success,/back_modifyitem.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2329,934" />
+      <AbsolutePoint location="2329,1195" />
+      <AbsolutePoint location="1030,1195" />
+      <AbsolutePoint location="1030,1750" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/showquestionlist.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="829,2492" />
+      <AbsolutePoint location="829,69" />
+      <AbsolutePoint location="251,69" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/allquestionlist.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,1305" />
+      <AbsolutePoint location="-49,1305" />
+      <AbsolutePoint location="-49,47" />
+      <AbsolutePoint location="195,47" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/backmodifyitem.do,success,/back_editItem.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1143,1850" />
+      <AbsolutePoint location="1143,1765" />
+      <AbsolutePoint location="1624,1765" />
+      <AbsolutePoint location="1624,1598" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/showquestionlist.do,success,/back_editUser.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="829,2450" />
+      <AbsolutePoint location="829,2313" />
+      <AbsolutePoint location="183,2313" />
+      <AbsolutePoint location="183,2298" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/gobackeditsubitem.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1129,2092" />
+      <AbsolutePoint location="1129,69" />
+      <AbsolutePoint location="251,69" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/registing.do,success,/success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="708,183" />
+      <AbsolutePoint location="950,183" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/deleteanswer.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2329,2092" />
+      <AbsolutePoint location="2329,69" />
+      <AbsolutePoint location="251,69" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/asking.do,success,/questionlist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="365,850" />
+      <AbsolutePoint location="365,798" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/querythisitem.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1729,550" />
+      <AbsolutePoint location="1729,47" />
+      <AbsolutePoint location="307,47" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/register.do,null,/register.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="993,310" />
+      <AbsolutePoint location="993,325" />
+      <AbsolutePoint location="109,325" />
+      <AbsolutePoint location="109,350" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/backaddsubitem.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2208,1392" />
+      <AbsolutePoint location="2622,1392" />
+      <AbsolutePoint location="2622,24" />
+      <AbsolutePoint location="203,24" />
+      <AbsolutePoint location="203,45" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/backaddsubitem.do,success,/back_editSubItem.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2031,1434" />
+      <AbsolutePoint location="2031,1657" />
+      <AbsolutePoint location="2016,1657" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/myquestionlist.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,992" />
+      <AbsolutePoint location="5,992" />
+      <AbsolutePoint location="5,0" />
+      <AbsolutePoint location="199,0" />
+      <AbsolutePoint location="199,45" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/answering.do,success,/success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="408,1592" />
+      <AbsolutePoint location="631,1592" />
+      <AbsolutePoint location="631,241" />
+      <AbsolutePoint location="1006,241" />
+      <AbsolutePoint location="1006,198" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/deleteitem.do,success,/go_back_editItem.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="708,1992" />
+      <AbsolutePoint location="1699,1992" />
+      <AbsolutePoint location="1699,1934" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/go_modifysubitem.do,success,/back_editSubItem.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1908,2092" />
+      <AbsolutePoint location="2128,2092" />
+      <AbsolutePoint location="2128,1674" />
+      <AbsolutePoint location="2016,1674" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/querythisitem.do,success,/questionlist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1550,625" />
+      <AbsolutePoint location="423,625" />
+      <AbsolutePoint location="423,750" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/backshowadminlist.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2329,2492" />
+      <AbsolutePoint location="2329,69" />
+      <AbsolutePoint location="251,69" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/backmodifysubitem.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="529,2192" />
+      <AbsolutePoint location="529,69" />
+      <AbsolutePoint location="251,69" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/backshowadminlist.do,success,/back_editAdmin.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2150,2483" />
+      <AbsolutePoint location="2004,2483" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/index.do,success,/index.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="135,550" />
+      <AbsolutePoint location="135,498" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/scorelist.do,success,/scorelist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,1362" />
+      <AbsolutePoint location="-403,1362" />
+      <AbsolutePoint location="-403,-165" />
+      <AbsolutePoint location="1312,-165" />
+      <AbsolutePoint location="1312,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/logout.do,success,/index.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,1222" />
+      <AbsolutePoint location="423,1222" />
+      <AbsolutePoint location="423,813" />
+      <AbsolutePoint location="229,813" />
+      <AbsolutePoint location="229,634" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/deleteanswer.do,success,/back_editAnswer.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2295,2050" />
+      <AbsolutePoint location="2295,1998" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/gobackeditsubitem.do,success,/back_modifysubitem.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1112,2050" />
+      <AbsolutePoint location="1112,1964" />
+      <AbsolutePoint location="1939,1964" />
+      <AbsolutePoint location="1939,1798" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accept.do,success,/success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1429,1650" />
+      <AbsolutePoint location="1429,1513" />
+      <AbsolutePoint location="2670,1513" />
+      <AbsolutePoint location="2670,241" />
+      <AbsolutePoint location="1036,241" />
+      <AbsolutePoint location="1036,198" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/modifinguser.do,success,/success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1451,1050" />
+      <AbsolutePoint location="1451,174" />
+      <AbsolutePoint location="1062,174" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/queryanswer.do,success,/answerlist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1008,1583" />
+      <AbsolutePoint location="1250,1583" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/backlogin.do,success,/back_index.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1665,934" />
+      <AbsolutePoint location="1665,1450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/go_back_editItem.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1908,1892" />
+      <AbsolutePoint location="2543,1892" />
+      <AbsolutePoint location="2543,-460" />
+      <AbsolutePoint location="273,-460" />
+      <AbsolutePoint location="273,45" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/queryques.do,success,/questiondetail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="408,1092" />
+      <AbsolutePoint location="1143,1092" />
+      <AbsolutePoint location="1143,874" />
+      <AbsolutePoint location="804,874" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accept.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,1692" />
+      <AbsolutePoint location="527,1692" />
+      <AbsolutePoint location="527,301" />
+      <AbsolutePoint location="799,301" />
+      <AbsolutePoint location="799,91" />
+      <AbsolutePoint location="307,91" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/toanswer.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,1392" />
+      <AbsolutePoint location="617,1392" />
+      <AbsolutePoint location="617,519" />
+      <AbsolutePoint location="203,519" />
+      <AbsolutePoint location="203,93" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/allquestionlist.do,success,/questionlist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,1283" />
+      <AbsolutePoint location="453,1283" />
+      <AbsolutePoint location="453,798" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/toanswer.do,success,/answer.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1008,1392" />
+      <AbsolutePoint location="1303,1392" />
+      <AbsolutePoint location="1303,1450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/queryques.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,1092" />
+      <AbsolutePoint location="-85,1092" />
+      <AbsolutePoint location="-85,-90" />
+      <AbsolutePoint location="221,-90" />
+      <AbsolutePoint location="221,45" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/back_addingadmin.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1429,2492" />
+      <AbsolutePoint location="1429,69" />
+      <AbsolutePoint location="251,69" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/deletesubitem.do,success,/back_editSubItem.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1308,2292" />
+      <AbsolutePoint location="1498,2292" />
+      <AbsolutePoint location="1498,1740" />
+      <AbsolutePoint location="1933,1740" />
+      <AbsolutePoint location="1933,1698" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/registing.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="350,192" />
+      <AbsolutePoint location="281,192" />
+      <AbsolutePoint location="281,93" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/deletequestion.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2508,1592" />
+      <AbsolutePoint location="2784,1592" />
+      <AbsolutePoint location="2784,109" />
+      <AbsolutePoint location="203,109" />
+      <AbsolutePoint location="203,93" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/showquestionlist.do,success,/back_editQuestion.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="829,2534" />
+      <AbsolutePoint location="829,2699" />
+      <AbsolutePoint location="2964,2699" />
+      <AbsolutePoint location="2964,774" />
+      <AbsolutePoint location="2322,774" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/deleteuser.do,success,/back_editUser.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="124,2350" />
+      <AbsolutePoint location="124,2298" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/go_back_addSubItem.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="130,2080" />
+      <AbsolutePoint location="130,69" />
+      <AbsolutePoint location="251,69" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/go_back_addSubItem.do,success,/back_goeditSubItem.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,2080" />
+      <AbsolutePoint location="-487,2080" />
+      <AbsolutePoint location="-487,-289" />
+      <AbsolutePoint location="1939,-289" />
+      <AbsolutePoint location="1939,750" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/gobackaddsubitem.do,success,/back_addSubItem.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1995,1134" />
+      <AbsolutePoint location="1995,1250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/asking.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,892" />
+      <AbsolutePoint location="-25,892" />
+      <AbsolutePoint location="-25,69" />
+      <AbsolutePoint location="195,69" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/gobackedititem.do,success,/back_modifyitem.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="786,1780" />
+      <AbsolutePoint location="950,1780" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/scorelist.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,1392" />
+      <AbsolutePoint location="41,1392" />
+      <AbsolutePoint location="41,91" />
+      <AbsolutePoint location="195,91" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/logining.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,453" />
+      <AbsolutePoint location="221,453" />
+      <AbsolutePoint location="221,93" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/backlogin.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1550,886" />
+      <AbsolutePoint location="1505,886" />
+      <AbsolutePoint location="1505,127" />
+      <AbsolutePoint location="303,127" />
+      <AbsolutePoint location="303,93" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/gobackaddsubitem.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2031,1050" />
+      <AbsolutePoint location="2031,371" />
+      <AbsolutePoint location="909,371" />
+      <AbsolutePoint location="909,51" />
+      <AbsolutePoint location="307,51" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/index.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="199,550" />
+      <AbsolutePoint location="199,93" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/gobackuserlist.do,success,/back_editUser.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1729,2334" />
+      <AbsolutePoint location="1729,2609" />
+      <AbsolutePoint location="543,2609" />
+      <AbsolutePoint location="543,2274" />
+      <AbsolutePoint location="198,2274" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/showanswerlist.do,success,/back_editQuestion.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2508,1792" />
+      <AbsolutePoint location="2964,1792" />
+      <AbsolutePoint location="2964,595" />
+      <AbsolutePoint location="2236,595" />
+      <AbsolutePoint location="2236,750" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/deletesubitem.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1129,2292" />
+      <AbsolutePoint location="1129,69" />
+      <AbsolutePoint location="251,69" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/deleteadmin.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="229,2592" />
+      <AbsolutePoint location="229,69" />
+      <AbsolutePoint location="251,69" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/modifyuser.do,null,/modifyuser.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1323,610" />
+      <AbsolutePoint location="1323,950" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/showanswerlist.do,success,/back_editAnswer.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2308,1834" />
+      <AbsolutePoint location="2308,1950" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/backmodifysubitem.do,success,/back_editSubItem.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="708,2192" />
+      <AbsolutePoint location="1423,2192" />
+      <AbsolutePoint location="1423,1825" />
+      <AbsolutePoint location="1789,1825" />
+      <AbsolutePoint location="1789,1674" />
+      <AbsolutePoint location="1850,1674" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/back_addingadmin.do,success,/back_editAdmin.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1608,2492" />
+      <AbsolutePoint location="1850,2492" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/deletequestion.do,success,/back_editQuestion.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2508,1562" />
+      <AbsolutePoint location="2874,1562" />
+      <AbsolutePoint location="2874,813" />
+      <AbsolutePoint location="2236,813" />
+      <AbsolutePoint location="2236,798" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/toask.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1129,750" />
+      <AbsolutePoint location="1129,-30" />
+      <AbsolutePoint location="251,-30" />
+      <AbsolutePoint location="251,45" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/back_addingadmin.do,success,/back_editAnswer.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1608,2492" />
+      <AbsolutePoint location="1999,2492" />
+      <AbsolutePoint location="1999,1964" />
+      <AbsolutePoint location="2150,1964" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/deletequestion.do,success,/back_detailquestion.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2319,1550" />
+      <AbsolutePoint location="2319,1298" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/myquestionlist.do,success,/questionlist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="829,950" />
+      <AbsolutePoint location="829,774" />
+      <AbsolutePoint location="492,774" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/logining.do,success,/index.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,483" />
+      <AbsolutePoint location="150,483" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/back_additem.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,1792" />
+      <AbsolutePoint location="-166,1792" />
+      <AbsolutePoint location="-166,265" />
+      <AbsolutePoint location="203,265" />
+      <AbsolutePoint location="203,93" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/backgoaddadmin.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2329,2292" />
+      <AbsolutePoint location="2329,69" />
+      <AbsolutePoint location="251,69" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/go_modifysubitem.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1729,2092" />
+      <AbsolutePoint location="1729,69" />
+      <AbsolutePoint location="251,69" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/toask.do,success,/ask.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1023,750" />
+      <AbsolutePoint location="1023,698" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/queryanswer.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="799,1550" />
+      <AbsolutePoint location="799,1465" />
+      <AbsolutePoint location="-562,1465" />
+      <AbsolutePoint location="-562,-370" />
+      <AbsolutePoint location="303,-370" />
+      <AbsolutePoint location="303,45" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/back_additem.do,success,/back_editItem.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="229,1792" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/backmodifyitem.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,1892" />
+      <AbsolutePoint location="-247,1892" />
+      <AbsolutePoint location="-247,192" />
+      <AbsolutePoint location="203,192" />
+      <AbsolutePoint location="203,93" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/deleteitem.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="529,1992" />
+      <AbsolutePoint location="529,69" />
+      <AbsolutePoint location="251,69" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/detailquestion.do,success,/back_editQuestion.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2307,850" />
+      <AbsolutePoint location="2307,798" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/answering.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,1592" />
+      <AbsolutePoint location="27,1592" />
+      <AbsolutePoint location="27,-54" />
+      <AbsolutePoint location="203,-54" />
+      <AbsolutePoint location="203,45" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/deleteuser.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="229,2392" />
+      <AbsolutePoint location="229,69" />
+      <AbsolutePoint location="251,69" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/gobackuserlist.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1729,2292" />
+      <AbsolutePoint location="1729,69" />
+      <AbsolutePoint location="251,69" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/login.do,null,/login.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="432,380" />
+      <AbsolutePoint location="650,380" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/go_back_editItem.do,success,/back_editItem.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1683,1850" />
+      <AbsolutePoint location="1683,1598" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/gobackedititem.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="718,1750" />
+      <AbsolutePoint location="718,1665" />
+      <AbsolutePoint location="-328,1665" />
+      <AbsolutePoint location="-328,127" />
+      <AbsolutePoint location="203,127" />
+      <AbsolutePoint location="203,93" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/backgoaddadmin.do,null,/back_addadmin.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2329,2334" />
+      <AbsolutePoint location="2329,2374" />
+      <AbsolutePoint location="798,2374" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/deleteadmin.do,success,/back_editAdmin.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="408,2592" />
+      <AbsolutePoint location="1927,2592" />
+      <AbsolutePoint location="1927,2498" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/showanswerlist.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2329,1792" />
+      <AbsolutePoint location="2329,69" />
+      <AbsolutePoint location="251,69" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/backgoaddadmin.do,success,/back_editAnswer.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2150,2292" />
+      <AbsolutePoint location="1992,2292" />
+      <AbsolutePoint location="1992,1974" />
+      <AbsolutePoint location="2150,1974" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/modifinguser.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1429,1050" />
+      <AbsolutePoint location="1429,431" />
+      <AbsolutePoint location="251,431" />
+      <AbsolutePoint location="251,93" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/detailquestion.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2329,850" />
+      <AbsolutePoint location="2329,-229" />
+      <AbsolutePoint location="625,-229" />
+      <AbsolutePoint location="625,51" />
+      <AbsolutePoint location="307,51" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ask.do,null,/chooseask.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,680" />
+      <AbsolutePoint location="112,680" />
+      <AbsolutePoint location="112,750" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/detailquestion.do,success,/back_detailquestion.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2319,934" />
+      <AbsolutePoint location="2319,1250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/logout.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,1192" />
+      <AbsolutePoint location="567,1192" />
+      <AbsolutePoint location="567,265" />
+      <AbsolutePoint location="855,265" />
+      <AbsolutePoint location="855,69" />
+      <AbsolutePoint location="307,69" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

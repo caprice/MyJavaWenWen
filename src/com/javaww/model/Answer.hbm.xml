@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.javaww.model">
+	<class name="Answer">
+		<id name="aid">
+			<generator class="native"/>
+		</id>
+		<property name="quesans"/>
+		<property name="anstime"/>
+		<property name="status"/>
+		
+		<many-to-one name="question" column="qid"/>
+		
+		<many-to-one name="user" column="userid"/>
+		
+	</class>
+</hibernate-mapping>

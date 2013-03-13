@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.javaww.model">
+	<class name="Question">
+		<id name="qid">
+			<generator class="native"/>
+		</id>
+		<property name="title"/>
+		<property name="content"/>
+		<property name="offerscore"/>
+		<property name="status"/>
+		<property name="questiontime"/>
+		<property name="clickcount"/>
+		<property name="acceptflag"/>
+		
+		<many-to-one name="item" column="itemid"/>
+		
+		<many-to-one name="user" column="userid"/>
+		
+		<many-to-one name="subItem" column="subid"/>
+		
+	</class>
+</hibernate-mapping>

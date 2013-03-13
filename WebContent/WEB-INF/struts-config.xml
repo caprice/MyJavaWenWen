@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+  	
+  	<form-beans>
+  		
+  		<!-- 用户actionform -->
+		<form-bean name="userForm" type="com.javaww.form.UserForm" />
+		
+		<!-- 问题actionform -->
+		<form-bean name="questionForm" type="com.javaww.form.QuestionForm"/>
+		
+		<!-- 答案actionform -->
+		<form-bean name="answerForm" type="com.javaww.form.AnswerForm"/>
+		
+		<!-- 后台管理员actionform -->
+		<form-bean name="adminForm" type="com.javaww.form.AdminForm"/>
+		
+		<!-- 一级栏目actionform -->
+		<form-bean name="itemForm" type="com.javaww.form.ItemForm"/>
+		
+		<!-- 二级栏目actionform -->
+		<form-bean name="subItemForm" type="com.javaww.form.SubItemForm"/>
+		
+	</form-beans>
+	
+  <global-exceptions />
+  <global-forwards />
+ 
+  <action-mappings>
+
+	<!-- 主页用户注册跳转action -->
+  	<action path="/register" forward="/register.jsp"/>
+
+	<!-- 用户注册action -->
+	<action path="/registing"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="userForm"
+			scope="request">
+		<forward name="success" path="/success.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!-- 主页用户登录跳转action -->
+  	<action path="/login" forward="/login.jsp"/>
+  	
+  	<!-- 用户登录action -->
+	<action path="/logining"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="userForm"
+			scope="request">
+		<forward name="success" path="/index.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!-- 首页action -->
+	<action path="/index"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			scope="request">
+		<forward name="success" path="/index.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!-- 主页用户提问跳转选择栏目级别action -->
+  	<action path="/ask" forward="/chooseask.jsp"/>
+  	
+  	<!-- 用户提问跳转action -->
+	<action path="/toask"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="questionForm"
+			scope="request">
+		<forward name="success" path="/ask.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+  	<!-- 用户提问处理action -->
+	<action path="/asking"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="questionForm"
+			scope="request">
+		<forward name="success" path="/questionlist.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!-- 用户提问列表action -->
+	<action path="/myquestionlist"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			scope="request">
+		<forward name="success" path="/questionlist.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!-- 用户提问详情查询action -->
+	<action path="/queryques"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="questionForm"
+			scope="request">
+		<forward name="success" path="/questiondetail.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!-- 用户注销action -->
+	<action path="/logout"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			scope="request">
+		<forward name="success" path="/index.do" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+
+	<!-- 用户积分排行action -->
+	<action path="/scorelist"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			scope="request">
+		<forward name="success" path="/scorelist.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	
+	<!-- 修改用户个人信息action -->
+  	<action path="/modifyuser" forward="/modifyuser.jsp"/>
+
+	<!-- 用户个人信息修改action -->
+	<action path="/modifinguser"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="userForm"
+			scope="request">
+		<forward name="success" path="/success.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!-- 问题列表查询action -->
+	<action path="/allquestionlist"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			scope="request">
+		<forward name="success" path="/questionlist.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!-- 回答问题列表查询action -->
+	<action path="/toanswer"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="answerForm"
+			scope="request">
+		<forward name="success" path="/answer.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!-- 回答问题action -->
+	<action path="/answering"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="answerForm"
+			scope="request">
+		<forward name="success" path="/success.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!-- 查看已有回答问题action -->
+	<action path="/queryanswer"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="answerForm"
+			scope="request">
+		<forward name="success" path="/answerlist.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!--  采用答案action -->
+	<action path="/accept"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="answerForm"
+			scope="request">
+		<forward name="success" path="/success.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!-- 主页二级栏目查询action -->
+	<action path="/querythisitem"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="questionForm"
+			scope="request">
+		<forward name="success" path="/questionlist.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!-- 后台管理员登录action -->
+	<action path="/backlogin"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="adminForm"
+			scope="request">
+		<forward name="success" path="/back_index.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!-- 后台添加一级栏目action -->
+	<action path="/back_additem"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="itemForm"
+			scope="request">
+		<forward name="success" path="/back_editItem.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!--go 修改一级栏目action -->
+	<action path="/go_back_editItem"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			scope="request">
+		<forward name="success" path="/back_editItem.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!--go 修改一级栏目action -->
+	<action path="/gobackedititem"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="itemForm"
+			scope="request">
+		<forward name="success" path="/back_modifyitem.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+  	<!-- 后台修改一级栏目action -->
+	<action path="/backmodifyitem"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="itemForm"
+			scope="request">
+		<forward name="success" path="/back_editItem.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!-- 后台删除一级栏目action -->
+	<action path="/deleteitem"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="itemForm"
+			scope="request">
+		<forward name="success" path="/go_back_editItem.do" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!-- 后台查询一级栏目action -->
+	<action path="/go_back_addSubItem"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			scope="request">
+		<forward name="success" path="/back_goeditSubItem.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!-- 后台查询一级栏目跳转action -->
+	<action path="/gobackaddsubitem"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="itemForm"
+			scope="request">
+		<forward name="success" path="/back_addSubItem.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!-- 后台添加二级栏目跳转action -->
+	<action path="/backaddsubitem"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="subItemForm"
+			scope="request">
+		<forward name="success" path="/back_editSubItem.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!-- go后台修改二级栏目跳转action -->
+	<action path="/gobackeditsubitem"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="subItemForm"
+			scope="request">
+		<forward name="success" path="/back_modifysubitem.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!-- go后台修改二级栏目跳转action -->
+	<action path="/go_modifysubitem"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			scope="request">
+		<forward name="success" path="/back_editSubItem.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!-- go后台修改二级栏目跳转action -->
+	<action path="/backmodifysubitem"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="subItemForm"
+			scope="request">
+		<forward name="success" path="/back_editSubItem.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!-- 删除二级栏目action -->
+	<action path="/deletesubitem"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="subItemForm"
+			scope="request">
+		<forward name="success" path="/back_editSubItem.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!--查询用户列表action -->
+	<action path="/gobackuserlist"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			scope="request">
+		<forward name="success" path="/back_editUser.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!--删除用户action -->
+	<action path="/deleteuser"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="userForm"
+			scope="request">
+		<forward name="success" path="/back_editUser.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!--查询所有的问题action -->
+	<action path="/showquestionlist"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="questionForm"
+			scope="request">
+		<forward name="success" path="/back_editQuestion.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!--查询问题详情action -->
+	<action path="/detailquestion"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="questionForm"
+			scope="request">
+		<forward name="success" path="/back_detailquestion.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!--查询问题详情action -->
+	<action path="/deletequestion"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="questionForm"
+			scope="request">
+		<forward name="success" path="/back_editQuestion.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!--查询答案列表action -->
+	<action path="/showanswerlist"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			scope="request">
+		<forward name="success" path="/back_editAnswer.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!--删除答案action -->
+	<action path="/deleteanswer"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="answerForm"
+			scope="request">
+		<forward name="success" path="/back_editAnswer.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!--添加管理员action -->
+	<action path="/backgoaddadmin"
+			forward="/back_addadmin.jsp">
+	</action>
+	
+	<!--删除答案action -->
+	<action path="/back_addingadmin"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="adminForm"
+			scope="request">
+		<forward name="success" path="/back_editAdmin.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!--查询管理员列表action -->
+	<action path="/backshowadminlist"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			scope="request">
+		<forward name="success" path="/back_editAdmin.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+	<!--查询管理员列表action -->
+	<action path="/deleteadmin"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="adminForm"
+			scope="request">
+		<forward name="success" path="/back_editAdmin.jsp" />
+		<forward name="failure" path="/failure.jsp" />
+	</action>
+	
+  </action-mappings>
+
+  <message-resources parameter="com.javaww.ApplicationResources" />
+</struts-config>
+

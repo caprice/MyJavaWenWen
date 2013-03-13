@@ -1,0 +1,112 @@
+#winname {
+
+   border: 2px #d0cfd5 solid;
+    width:200px;
+    height:70px;
+
+    position:absolute;
+    top:316px;
+    left:680px;
+
+    display:none;
+}
+
+#win_pwd {
+
+   border: 2px #d0cfd5 solid;
+    width:200px;
+    height:70px;
+
+    position:absolute;
+    top:358px;
+    left:680px;
+
+    display:none;
+}
+
+#win_cpwd {
+
+   border: 2px #d0cfd5 solid;
+    width:200px;
+    height:70px;
+
+    position:absolute;
+    top:400px;
+    left:680px;
+
+    display:none;
+}
+
+#win_rname {
+
+   border: 2px #d0cfd5 solid;
+    width:200px;
+    height:70px;
+
+    position:absolute;
+    top:486px;
+    left:680px;
+
+    display:none;
+}
+
+#win_mail {
+
+   border: 2px #d0cfd5 solid;
+    width:200px;
+    height:70px;
+
+    position:absolute;
+    top:528px;
+    left:680px;
+
+    display:none;
+}
+
+#win_ques {
+
+   border: 2px #d0cfd5 solid;
+    width:200px;
+    height:70px;
+
+    position:absolute;
+    top:570px;
+    left:680px;
+
+    display:none;
+}
+
+#win_ans {
+
+   border: 2px #d0cfd5 solid;
+    width:200px;
+    height:70px;
+
+    position:absolute;
+    top:612px;
+    left:680px;
+
+    display:none;
+}
+
+#js_title {
+    background-color:#cccccc;
+    color: Black;
+	font-size:14px;
+	font-family:Î¢ÈíÑÅºÚ;
+    padding-left: 3px;
+}
+
+#js_content {
+     background-color: white;
+     color: black;
+	 font-size:14px;
+	 font-family:Ó×Ô²;
+     padding-left: 3px;   
+     padding-top: 5px;
+}
+
+#close {
+    margin-left: 230px;
+    cursor: pointer;
+}

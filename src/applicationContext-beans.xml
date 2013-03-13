@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	     xmlns:aop="http://www.springframework.org/schema/aop"
+	     xmlns:tx="http://www.springframework.org/schema/tx"
+	     xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd">
+	
+	<bean id="userDao" class="com.javaww.dao.impl.UserDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="itemDao" class="com.javaww.dao.impl.ItemDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="subItemDao" class="com.javaww.dao.impl.SubItemDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="questionDao" class="com.javaww.dao.impl.QuestionDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="answerDao" class="com.javaww.dao.impl.AnswerDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="adminDao" class="com.javaww.dao.impl.AdminDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean id="admin" class="com.javaww.model.Admin"/>
+	
+	<bean id="answer" class="com.javaww.model.Answer"/>
+	
+	<bean id="item" class="com.javaww.model.Item"/>
+	
+	<bean id="subItem" class="com.javaww.model.SubItem"/>
+	
+	<bean id="itemBean" class="com.javaww.bean.ItemBean"/>
+	
+	<bean id="user" class="com.javaww.model.User"/>
+	
+	<bean id="question" class="com.javaww.model.Question"/>
+	
+</beans>
